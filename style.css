@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,22,107,0.9618697820925245) 100%, rgba(144,127,106,1) 100%);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    }
+.link {
+    text-align: center;
+    color: #1e0272;
+    text-decoration-color: #2E9AFF;
+    transition: background-color 0.5s linear;
+}
+
+/* Есть возможность навести указатель на элемент */
+@media (any-hover: hover) {
+    .link:hover {
+    background-color: #2E9AFF;
+    transition: background-color 0.1s linear;
+}
+}
+
+.h1 {
+    color: coral;
+font-size: 28px;
+line-height: 36px;
+font-weight: bold;
+}
+.p {
+    font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+color: #555635
+}
+.h2 {
+    color: coral;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 80px;
+}
+.gallery {
+    display: flex; /* Устанавливаем отображение в виде гибкого контейнера */
+}
+
+.gallery > div {
+    margin: 10px; /* Добавляем отступы между элементами галереи */
+    border: 2px solid #ddd; /* Добавляем рамку вокруг каждого изображения */
+    border-radius: 8px; /* Добавляем скругление углов рамки */
+    text-align: center; /* Центрируем текст внутри блока */
+    transition: transform 0.3s ease; /* добавляем плавное переходное изменение при анимации */
+}
+.gallery > div:hover {
+    transform: scale(1.05); /* увеличиваем размер при наведении */
+}
+
+
+.gallery img {
+    max-width: 100%; /* Максимальная ширина изображений равна ширине их контейнеров */
+    height: auto; /* Автоматически рассчитываем высоту изображений */
+}
